@@ -1,6 +1,6 @@
 <script lang="ts">
     import { isWindowOpen } from "$lib";
-    import "/src/styles/boxes.css";
+    import "../styles/boxes.css";
     import Window from "../components/Window.svelte";
     // Window content modules
     import Ideology from "../components/categories/Ideology.svelte";
