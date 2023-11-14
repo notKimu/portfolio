@@ -1,5 +1,8 @@
 <script lang="ts">
     import { isWindowOpen } from "$lib";
+    // Styles
+    import "../globals.css";
+    import "../styles/kwind.css";
     import "../styles/boxes.css";
     import Window from "../components/Window.svelte";
     // Window content modules
