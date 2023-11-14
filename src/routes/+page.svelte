@@ -16,6 +16,8 @@
     import ts from "../assets/svg/typescript.svg"
     import js from "../assets/svg/javascript.svg"
     import svelte from "../assets/svg/svelte.svg"
+    import blueprint from "../assets/svg/blueprint.svg"
+    import constellation from "../assets/svg/endless-constellation.svg"
 
     type WindowData = {
         title:   string;
@@ -172,7 +174,7 @@
 
         <img
             class="absolute bg-image"
-            src="/src/assets/svg/blueprint.svg" 
+            src={blueprint}
             alt="A blueprint grid"
         />
     </div>
@@ -201,7 +203,7 @@
 
         <img
             class="absolute bg-image"
-            src="/src/assets/svg/endless-constellation.svg" 
+            src={constellation} 
             alt="A package icon"
         />
     </div>
@@ -257,8 +259,6 @@
     @media screen and (max-width: 500px) {
         .profile-data { flex-direction: column; }
 
-        .columns-2 {
-            grid-template-columns: repeat(1, 1fr);
-        }
+        .columns-2 { grid-template-columns: repeat(1, 1fr); }
     }
 </style>
