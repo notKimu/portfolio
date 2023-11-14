@@ -1,0 +1,152 @@
+/**FUNNY!!!!!!! */
+.invert-text {
+    filter: invert(1);
+}
+.outline {
+    filter: drop-shadow(1px 0 0px #fff) drop-shadow(0 1px 0 #fff) drop-shadow(-1px 0 0 #fff) drop-shadow(0 -1px 0 #fff)
+}
+
+.unset {
+    all: unset;
+}
+
+
+/**SIZING */
+.screen {
+    width:  100dvw;
+    height: 100dvh;
+}
+
+.h-full {
+    height: 100%;
+}
+.w-full {
+    width: 100%;
+}
+
+.h-fit {
+    height: fit-content;
+}
+.w-fit {
+    width: fit-content;
+}
+
+
+/**POSITIONS */
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/**DISPLAYS */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid
+}
+
+.col {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+
+.columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/**How do I center a div? */
+.a-center {
+    align-items: center;
+}
+.j-between {
+    justify-content: space-between;
+}
+.j-center {
+    justify-content: center;
+}
+.p-center {
+    place-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+/** -------------------- */
+
+
+/**GAPS */
+.g-reset {
+    gap: 0;
+}
+.g-s {
+    gap: .2rem;
+}
+.g-m {
+    gap: .75rem;
+}
+.g-x {
+    gap: 1.5rem;
+}
+.g-xl {
+    gap: 3rem;
+}
+/** -------------------- */
+
+
+/**PADDING */
+.p-reset {
+    padding: 0;
+}
+.p-s {
+    padding: .2rem;
+}
+.p-m {
+    padding: .75rem;
+}
+.p-x {
+    padding: 1.5rem;
+}
+.p-xl {
+    padding: 3rem;
+}
+/** -------------------- */
+
+
+/**PADDING */
+.m-left-auto {
+    margin-left: auto;
+}
+/** -------------------- */
+
+
+/**Border Radius */
+.br-s {
+    border-radius: .25rem;
+}
+.br-m {
+    border-radius: .5rem;
+}
+.br-x {
+    border-radius: 1rem;
+}
+.br-xl {
+    border-radius: 2rem;
+}
+.round {
+    border-radius: 50%;
+}
+/** -------------------- */

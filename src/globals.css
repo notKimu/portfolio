@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Hurmit";
+    src: url("/src/assets/fonts/HurmitNerdFont-Regular.otf");
+}
+@font-face {
+    font-family: "Monaspace";
+    src: url("/src/assets/fonts/MonaspaceNeon-Regular.woff");
+}
+@font-face {
+    font-family: "Noto Color Emoji";
+    src: url("/src/assets/fonts/NotoColorEmoji-Regular.ttf");
+}
+
+
+/** Globals */
+:root {
+    --color-accent:         #f0b6d6cb;
+    --color-border:         #e0d2e0;
+
+    --color-bg:             #0f0f0fef;
+    --color-bg-category:    #0e0e0ede;
+    --color-text:           #fff;
+
+    --color-bg-window:      #2C3333;
+    --color-accent-window:  #b6cff0cb;
+
+    --global-border-width:  .15rem;
+    --global-border-radius: .5rem;
+    --inner-border-radius:  calc(var(--global-border-radius) / 2);
+    --global-padding:       1.5rem;
+}
+
+* {
+    box-sizing:  border-box;
+    color:       azure;
+    font-family: "Monaspace", "Noto Color Emoji";
+    margin:      0;
+    padding:     0;
+    transition:  .2s;
+}
+
+body,
+html {
+    background:       url("/src/assets/img/wanderer.jpg") fixed center no-repeat;
+    background-size:  cover;
+    background-color: black;
+}
+
+main { padding: 4.6rem 5dvw; }
+
+
+/**CUSTOMS */
+.bigtitle {
+    font-size: clamp(4rem, 6dvw, 7rem);
+}
+
+h1 {
+    font-family: "Hurmit";
+}
+
+ul { list-style: none; }
+
+ul li::before { content: "> "; }
+
+details {
+    width:            100%;
+
+    background-color: var(--color-accent);
+    border-radius:    var(--inner-border-radius);
+}
+.details__content {
+    padding: .5rem;
+}
+details[open] {
+    background-color: transparent;
+    border:           var(--global-border-width) solid var(--color-accent);
+}
+
+summary {
+    border-radius: var(--inner-border-radius) var(--inner-border-radius) 0 0;
+    padding: .5rem;
+} 
+details[open] > summary {
+    background-color: var(--color-bg-category);
+    margin-bottom:    .5rem; 
+} 
+
+
+/**RESPONSIVE */
+.mobile-show { display: none; }
+
+@media screen and (max-width: 728px) {
+    main { padding: 2.25rem .75rem; }
+    .desktop-show { display: none; }
+    .mobile-show { display: unset; }
+}
