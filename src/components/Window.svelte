@@ -15,12 +15,12 @@
             <h4>{data.title}.md</h4>
 
             <div class="window__buttons flex">
-                <button class="window__button">x</button>
-                <button class="window__button">x</button>
+                <button class="window__button hoverable">󰖰</button>
+                <button class="window__button hoverable">󰝣</button>
                 <button
                     on:click={() => { closeWindow() }}
-                    class="window__button"
-                >x</button>
+                    class="window__button hoverable"
+                >󰖭</button>
             </div>
         </div>
 
