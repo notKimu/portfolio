@@ -1,13 +1,21 @@
 <script lang="ts">
     import { isWindowOpen } from "$lib";
-    // Styles
-    import "../globals.css";
-    import "../styles/kwind.css";
-    import "../styles/boxes.css";
+    // Components
     import Window from "../components/Window.svelte";
     // Window content modules
     import Ideology from "../components/categories/Ideology.svelte";
     import Wip from "../components/categories/Wip.svelte";
+    // Styles
+    import "../globals.css";
+    import "../styles/kwind.css";
+    import "../styles/boxes.css";
+    // Images (THANKS VERCEL)
+    import kimuPfp from "../assets/img/kimu_git.webp"
+    import rust from  "../assets/svg/rust.svg"
+    import go from "../assets/svg/go.svg"
+    import ts from "../assets/svg/typescript.svg"
+    import js from "../assets/svg/javascript.svg"
+    import svelte from "../assets/svg/svelte.svg"
 
     type WindowData = {
         title:   string;
@@ -39,7 +47,7 @@
     <!-- Presentation -->
     <div class="profile-socials category flex g-x p-x">
         <div class="flex g-x">
-            <img class="profile-pic br-x" src="/src/assets/img/kimu_git.webp" alt="Github Profile" />
+            <img class="profile-pic br-x" src={kimuPfp} alt="Github Profile" />
             <div class="profile-text">
                 <h1>Kimu</h1>
                 <ul>
@@ -140,11 +148,11 @@
             </h4>
         </div>
         <div class="readme__langs box flex col j-between g-x">
-            <img src="/src/assets/svg/rust.svg"       alt="The Rust Programming Language icon" class="outline" />
-            <img src="/src/assets/svg/go.svg"         alt="Go Programming Language icon" />
-            <img src="/src/assets/svg/javascript.svg" alt="JavaScript icon" />
-            <img src="/src/assets/svg/typescript.svg" alt="TypeScript icon" />
-            <img src="/src/assets/svg/svelte.svg"     alt="Svelte frontend framework icon" />
+            <img src={rust}   alt="The Rust Programming Language icon" class="outline" />
+            <img src={go}     alt="Go Programming Language icon" />
+            <img src={js}     alt="JavaScript icon" />
+            <img src={ts}     alt="TypeScript icon" />
+            <img src={svelte} alt="Svelte frontend framework icon" />
         </div>
     </div>
 
