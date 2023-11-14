@@ -58,7 +58,6 @@
 
     .window {
         max-height:         90dvh;
-        max-width:          80%;
 
         display:            grid;
         grid-template-rows: 2rem 1fr;

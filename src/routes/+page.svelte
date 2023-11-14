@@ -46,7 +46,7 @@
 
     <!-- Presentation -->
     <div class="profile-socials category flex g-x p-x">
-        <div class="flex g-x">
+        <div class="profile-data flex g-x">
             <img class="profile-pic br-x" src={kimuPfp} alt="Github Profile" />
             <div class="profile-text">
                 <h1>Kimu</h1>
@@ -213,21 +213,23 @@
 
 <style>
     .profile-pic {
-        height: clamp(9rem, 15dvw, 20rem);
-        width:  clamp(9rem, 15dvw, 20rem);
+        height: clamp(8rem, 15dvw, 20rem);
+        width:  clamp(8rem, 15dvw, 20rem);
     }
     .social-icon { height: 2rem; width:  2rem; }
 
     .readme { grid-template-columns: 1fr 5rem; }
+    .readme__langs { overflow-x: scroll; }
 
     .bg-image {
-        width:   100%;
-        top:     -20%;
-        left:    -20%;
+        width:        100%;
+        top:          -20%;
+        left:         -20%;
         
-        mask:    radial-gradient(circle at top left, #ffffff8e 0%, transparent 40%);
+        mask:         radial-gradient(circle at top left, #ffffff8e 0%, transparent 70%);
+        -webkit-mask: radial-gradient(circle at top left, #ffffff8e 0%, transparent 70%);
 
-        z-index: -1;
+        z-index:      -1;
     }
     .category:hover .bg-image {
         top:  0%;
@@ -253,6 +255,8 @@
     }
 
     @media screen and (max-width: 500px) {
+        .profile-data { flex-direction: column; }
+
         .columns-2 {
             grid-template-columns: repeat(1, 1fr);
         }
