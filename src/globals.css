@@ -24,6 +24,8 @@
     --color-bg-window:      #2C3333;
     --color-accent-window:  #b6cff0cb;
 
+    --color-bg-socials:     var(--color-bg);
+
     --global-border-width:  .15rem;
     --global-border-radius: .5rem;
     --inner-border-radius:  calc(var(--global-border-radius) / 2);
